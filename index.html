@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="작업과 기록을 모아두는 RNSJ 포트폴리오" />
+    <meta name="theme-color" content="#6655e8" />
+    <title>RNSJ — Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%236655e8'/%3E%3Cpath d='M16 46V18h15c9 0 14 5 14 12 0 5-3 9-8 11l11 5H36l-10-5v5H16zm10-14h5c3 0 5-1 5-3s-2-3-5-3h-5v6z' fill='white'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="source/styles/styles.css" />
+    <script src="source/scripts/posts.js" defer></script>
+    <script src="source/scripts/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="RNSJ 홈">RNSJ<span>.</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">메뉴 열기</span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+        <a href="#work">Work</a><a href="#about">About</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="top" class="intro" aria-labelledby="intro-title">
+        <div class="intro-kicker"><span>Portfolio / Archive</span><span>Seoul, KR</span></div>
+        <h1 id="intro-title">만들고,<br /><em>기록합니다.</em></h1>
+        <div class="intro-footer">
+          <p>웹과 이러닝 콘텐츠를 만들고, LLM을 탐구합니다. 프로젝트와 연구의 과정을 이곳에 모읍니다.</p>
+          <a class="round-link" href="#work" aria-label="작업 목록 보기">↓</a>
+        </div>
+      </section>
+      <section id="work" class="work-section" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Selected posts</p><h2 id="work-title">작업과 기록</h2></div>
+          <p id="post-count" class="post-count" aria-live="polite"></p>
+        </div>
+        <div class="filters" role="group" aria-label="게시물 분류">
+          <button class="filter is-active" type="button" data-filter="all">전체</button>
+          <button class="filter" type="button" data-filter="web">사이트 개발</button>
+          <button class="filter" type="button" data-filter="elearning">이러닝</button>
+          <button class="filter" type="button" data-filter="llm">LLM</button>
+          <button class="filter" type="button" data-filter="thesis">학위 논문</button>
+        </div>
+        <div id="post-grid" class="post-grid"></div>
+        <noscript><p class="empty-state">게시물 목록을 보려면 JavaScript를 활성화해 주세요.</p></noscript>
+      </section>
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <p class="eyebrow">About</p>
+        <div class="about-grid">
+          <h2 id="about-title">탐구하고,<br />꾸준히 만듭니다.</h2>
+          <div class="about-copy">
+            <p>기획에서 디자인, 구현까지 경계를 두지 않고 필요한 일을 합니다. 기술로 더 좋은 학습 경험을 만드는 일에 관심이 있습니다.</p>
+            <dl><div><dt>Focus</dt><dd>Web · e-Learning · LLM</dd></div><div><dt>Based in</dt><dd>Seoul, Korea</dd></div></dl>
+            <div class="favorites" aria-label="좋아하는 것">
+              <span>당구</span><span>뱀</span><span>고양이</span><span>커피</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><p>© <span id="year"></span> RNSJ</p><a href="#top">맨 위로 ↑</a></footer>
+    <dialog id="post-dialog" class="post-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-bar">
+        <p id="dialog-category"></p>
+        <button class="dialog-close" type="button" aria-label="글 닫기">닫기 ×</button>
+      </div>
+      <article class="markdown-document">
+        <p id="dialog-date" class="dialog-date"></p>
+        <div id="markdown-content" class="markdown-content" aria-live="polite"></div>
+      </article>
+    </dialog>
+  </body>
+</html>

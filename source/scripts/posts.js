@@ -1,0 +1,13 @@
+// 게시물 내용은 source/contents 폴더의 Markdown 파일로 관리합니다.
+const portfolioPosts = [
+  { slug: "static-site-foundations", title: "정적 사이트를 빠르고 단단하게 만드는 법", category: "web", label: "사이트 개발", date: "2026.09.17", description: "HTML, CSS, JavaScript만으로 가볍고 유지보수하기 좋은 웹사이트를 설계한 과정을 정리했습니다.", content: "source/contents/static-site-foundations.md", accent: "blue" },
+  { slug: "responsive-layout", title: "반응형 포트폴리오의 레이아웃 원칙", category: "web", label: "사이트 개발", date: "2026.09.08", description: "작은 화면부터 큰 화면까지 자연스럽게 이어지는 그리드와 타이포그래피 규칙을 살펴봅니다.", content: "source/contents/responsive-layout.md", accent: "periwinkle" },
+  { slug: "github-pages-domain", title: "GitHub Pages와 커스텀 도메인 연결기", category: "web", label: "사이트 개발", date: "2026.08.29", description: "정적 사이트 배포부터 DNS 설정, HTTPS 적용까지의 흐름을 단계별로 기록했습니다.", content: "source/contents/github-pages-domain.md", accent: "indigo" },
+  { slug: "learning-content-structure", title: "학습자가 길을 잃지 않는 콘텐츠 구조", category: "elearning", label: "이러닝 콘텐츠", date: "2026.08.15", description: "학습 목표와 정보 구조를 연결해 복잡한 내용을 이해하기 쉽게 구성하는 방법을 소개합니다.", content: "source/contents/learning-content-structure.md", accent: "violet" },
+  { slug: "microlearning-experiment", title: "마이크로러닝 콘텐츠 제작 실험", category: "elearning", label: "이러닝 콘텐츠", date: "2026.08.02", description: "긴 강의를 짧은 학습 단위로 재구성하고 몰입도를 높이기 위해 시도한 방법들입니다.", content: "source/contents/microlearning-experiment.md", accent: "plum" },
+  { slug: "interactive-learning", title: "상호작용으로 완성하는 온라인 학습", category: "elearning", label: "이러닝 콘텐츠", date: "2026.07.21", description: "퀴즈와 피드백, 분기형 시나리오를 활용해 능동적인 학습 경험을 설계했습니다.", content: "source/contents/interactive-learning.md", accent: "purple" },
+  { slug: "document-search-llm", title: "나만의 문서 검색형 LLM 만들기", category: "llm", label: "LLM", date: "2026.07.04", description: "문서를 나누고 검색한 뒤 답변에 근거를 더하는 간단한 RAG 파이프라인을 구현했습니다.", content: "source/contents/document-search-llm.md", accent: "cobalt" },
+  { slug: "before-prompting", title: "프롬프트보다 먼저 설계해야 할 것", category: "llm", label: "LLM", date: "2026.06.18", description: "좋은 결과를 얻기 위해 작업의 맥락, 입력 형식, 평가 기준을 정의하는 과정을 다룹니다.", content: "source/contents/before-prompting.md", accent: "blue" },
+  { slug: "llm-evaluation", title: "LLM 답변의 품질을 평가하는 작은 기준들", category: "llm", label: "LLM", date: "2026.06.01", description: "정확성, 관련성, 일관성을 중심으로 생성 결과를 비교하고 개선한 실험 기록입니다.", content: "source/contents/llm-evaluation.md", accent: "periwinkle" },
+  { slug: "attention-analysis-thesis", title: "이러닝 환경에서 집중도 분석: 시선과 자세 기반", category: "thesis", label: "학위 논문", date: "2026.05.14", description: "웹캠 기반 시선 방향과 상체 자세의 변화를 결합해 온라인 학습자의 집중도를 추정한 연구입니다.", content: "source/contents/attention-analysis-thesis.md", accent: "indigo" }
+];
